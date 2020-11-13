@@ -1,4 +1,4 @@
 {
     "Worker" : "Gaius.Core.Worker.MarkdownLiquid.MarkdownLiquidWorker",
-    "GenerationRootPrefix" : ""
+    "GenerationRootPrefix" : "//rstrube.github.io"
 }
