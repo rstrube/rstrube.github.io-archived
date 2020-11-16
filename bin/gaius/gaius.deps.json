@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "gaius/0.0.20": {
+      "gaius/0.0.22": {
         "dependencies": {
           "Gaius.Core": "1.0.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
@@ -981,7 +981,7 @@
     }
   },
   "libraries": {
-    "gaius/0.0.20": {
+    "gaius/0.0.22": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
