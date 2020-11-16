@@ -6,11 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "gaius/0.0.14": {
+      "gaius/0.0.20": {
         "dependencies": {
           "Gaius.Core": "1.0.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "5.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
           "Microsoft.Extensions.Configuration.Json": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
@@ -40,18 +39,6 @@
           "lib/netstandard2.0/Colorful.Console.dll": {
             "assemblyVersion": "1.2.11.0",
             "fileVersion": "1.2.11.0"
-          }
-        }
-      },
-      "Figgle/0.4.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "System.IO.Compression.ZipFile": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Figgle.dll": {
-            "assemblyVersion": "0.4.0.0",
-            "fileVersion": "0.4.0.0"
           }
         }
       },
@@ -143,18 +130,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.EnvironmentVariables/5.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "5.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.51904"
           }
@@ -983,7 +958,6 @@
       "Gaius.Core/1.0.0": {
         "dependencies": {
           "Colorful.Console": "1.2.11",
-          "Figgle": "0.4.0",
           "Fluid.Core": "1.0.0-beta-9637",
           "Gaius.Utilities": "1.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "5.0.0",
@@ -1007,7 +981,7 @@
     }
   },
   "libraries": {
-    "gaius/0.0.14": {
+    "gaius/0.0.20": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1018,13 +992,6 @@
       "sha512": "sha512-AZpnW0FYpEZhOYsg+xJzWwwPtXaeqn+P9e2yGPxSx80wGjDmgwPZ+NZH3tDUf3Aqx61OO5ZWLudz1BmC9+cqhA==",
       "path": "colorful.console/1.2.11",
       "hashPath": "colorful.console.1.2.11.nupkg.sha512"
-    },
-    "Figgle/0.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cHs6CTvKljWhQpAlu8Q5SVf4H3DNNYNFjPMsv9VIm+Pj7Z0O9oq2o4lF02GUVI+aHEVg24BdtmUadIbVoDD9uw==",
-      "path": "figgle/0.4.0",
-      "hashPath": "figgle.0.4.0.nupkg.sha512"
     },
     "Fluid.Core/1.0.0-beta-9637": {
       "type": "package",
@@ -1074,13 +1041,6 @@
       "sha512": "sha512-Of1Irt1+NzWO+yEYkuDh5TpT4On7LKl98Q9iLqCdOZps6XXEWDj3AKtmyvzJPVXZe4apmkJJIiDL7rR1yC+hjQ==",
       "path": "microsoft.extensions.configuration.binder/5.0.0",
       "hashPath": "microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-fqh6y6hAi0Z0fRsb4B/mP9OkKkSlifh5osa+N/YSQ+/S2a//+zYApZMUC1XeP9fdjlgZoPQoZ72Q2eLHyKLddQ==",
-      "path": "microsoft.extensions.configuration.environmentvariables/5.0.0",
-      "hashPath": "microsoft.extensions.configuration.environmentvariables.5.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.FileExtensions/5.0.0": {
       "type": "package",

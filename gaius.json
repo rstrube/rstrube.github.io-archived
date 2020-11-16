@@ -1,4 +1,14 @@
 {
-    "Worker" : "Gaius.Core.Worker.MarkdownLiquid.MarkdownLiquidWorker",
-    "GenerationUrlRootPrefix" : "//rstrube.github.io"
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft": "Warning",
+            "Microsoft.Hosting.Lifetime": "Information"
+        }
+    },
+    "AllowedHosts": "*",
+    "GaiusEngine": {
+        "Worker": "Gaius.Core.Worker.MarkdownLiquid.MarkdownLiquidWorker",
+        "GenerationUrlRootPrefix": "//rstrube.github.io"
+    }
 }
