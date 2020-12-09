@@ -8,7 +8,15 @@
     },
     "AllowedHosts": "*",
     "GaiusEngine": {
-        "Worker": "Gaius.Core.Worker.MarkdownLiquid.MarkdownLiquidWorker",
-        "GenerationUrlRootPrefix": "//rstrube.github.io"
+        "SourceDirectoryName" : "_source",
+        "GenerationDirectoryName" : "_generated",
+        "ThemesDirectoryName" : "_themes",
+        "PostsDirectoryName" : "_posts",
+        "ThemeName" : "default",
+        "GenerationUrlRootPrefix": "//rstrube.github.io",
+        "AlwaysKeep" : [
+            ".git"
+        ],
+        "Worker" : "Gaius.Core.Worker.MarkdownLiquid.MarkdownLiquidWorker"
     }
 }
