@@ -6,20 +6,21 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "gaius/0.0.30": {
+      "gaius/0.0.31": {
         "dependencies": {
           "Gaius.Core": "1.0.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "5.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
           "Microsoft.Extensions.Configuration.Json": "5.0.0",
-          "Microsoft.Extensions.DependencyInjection": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0"
         },
         "runtime": {
           "gaius.dll": {}
         }
       },
-      "Colorful.Console/1.2.11": {
+      "Colorful.Console/1.2.15": {
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
           "System.Collections": "4.3.0",
@@ -37,8 +38,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/Colorful.Console.dll": {
-            "assemblyVersion": "1.2.11.0",
-            "fileVersion": "1.2.11.0"
+            "assemblyVersion": "1.2.15.0",
+            "fileVersion": "1.2.15.0"
           }
         }
       },
@@ -73,11 +74,11 @@
           }
         }
       },
-      "Markdig/0.22.0": {
+      "Markdig/0.22.1": {
         "runtime": {
           "lib/netcoreapp3.1/Markdig.dll": {
-            "assemblyVersion": "0.22.0.0",
-            "fileVersion": "0.22.0.0"
+            "assemblyVersion": "0.22.1.0",
+            "fileVersion": "0.22.1.0"
           }
         }
       },
@@ -135,6 +136,18 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.FileExtensions/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "5.0.0",
@@ -165,14 +178,14 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.120.57516"
           }
         }
       },
@@ -947,24 +960,24 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "YamlDotNet/8.1.2": {
+      "YamlDotNet/9.1.1": {
         "runtime": {
           "lib/netstandard2.1/YamlDotNet.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.1.2.0"
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.1.1.0"
           }
         }
       },
       "Gaius.Core/1.0.0": {
         "dependencies": {
-          "Colorful.Console": "1.2.11",
+          "Colorful.Console": "1.2.15",
           "Fluid.Core": "1.0.0-beta-9637",
           "Gaius.Utilities": "1.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "5.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "YamlDotNet": "8.1.2",
-          "Markdig": "0.22.0"
+          "YamlDotNet": "9.1.1",
+          "Markdig": "0.22.1"
         },
         "runtime": {
           "Gaius.Core.dll": {}
@@ -972,7 +985,7 @@
       },
       "Gaius.Utilities/1.0.0": {
         "dependencies": {
-          "Colorful.Console": "1.2.11"
+          "Colorful.Console": "1.2.15"
         },
         "runtime": {
           "Gaius.Utilities.dll": {}
@@ -981,17 +994,17 @@
     }
   },
   "libraries": {
-    "gaius/0.0.30": {
+    "gaius/0.0.31": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Colorful.Console/1.2.11": {
+    "Colorful.Console/1.2.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AZpnW0FYpEZhOYsg+xJzWwwPtXaeqn+P9e2yGPxSx80wGjDmgwPZ+NZH3tDUf3Aqx61OO5ZWLudz1BmC9+cqhA==",
-      "path": "colorful.console/1.2.11",
-      "hashPath": "colorful.console.1.2.11.nupkg.sha512"
+      "sha512": "sha512-iDBG+0MHkVzM/p74WsfSpcNP2hL7E3o+8Y5ZEEbWQuYmRtHh/YXdbfEnvusTS2Ds8+KX17NGvuNOgTfBxXLCEw==",
+      "path": "colorful.console/1.2.15",
+      "hashPath": "colorful.console.1.2.15.nupkg.sha512"
     },
     "Fluid.Core/1.0.0-beta-9637": {
       "type": "package",
@@ -1007,12 +1020,12 @@
       "path": "irony.core/1.0.7",
       "hashPath": "irony.core.1.0.7.nupkg.sha512"
     },
-    "Markdig/0.22.0": {
+    "Markdig/0.22.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/GbIsc1Dc/fOPqJM2sWIlWymgRAVfJhet+MY1Ze46HpDMyl+9TTfs4AdYbXx5QZo7eRh+Ew7A/nyGSVNCuYd9g==",
-      "path": "markdig/0.22.0",
-      "hashPath": "markdig.0.22.0.nupkg.sha512"
+      "sha512": "sha512-Rw4Z2yUaMQIVNBVnTrCzvulEzF0TdzNprIMZ0knOB0jnVryjOUHDeyVdwFHbWjHLf84sU6TvxI03U6+jC4UBVA==",
+      "path": "markdig/0.22.1",
+      "hashPath": "markdig.0.22.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
@@ -1042,6 +1055,13 @@
       "path": "microsoft.extensions.configuration.binder/5.0.0",
       "hashPath": "microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fqh6y6hAi0Z0fRsb4B/mP9OkKkSlifh5osa+N/YSQ+/S2a//+zYApZMUC1XeP9fdjlgZoPQoZ72Q2eLHyKLddQ==",
+      "path": "microsoft.extensions.configuration.environmentvariables/5.0.0",
+      "hashPath": "microsoft.extensions.configuration.environmentvariables.5.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration.FileExtensions/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1056,12 +1076,12 @@
       "path": "microsoft.extensions.configuration.json/5.0.0",
       "hashPath": "microsoft.extensions.configuration.json.5.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection/5.0.0": {
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
-      "path": "microsoft.extensions.dependencyinjection/5.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512"
+      "sha512": "sha512-//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
       "type": "package",
@@ -1651,12 +1671,12 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "YamlDotNet/8.1.2": {
+    "YamlDotNet/9.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GlPKbb4l+91dyYVKV7UnJlr2CWooNNM1ayZWC90QAmlFPgbwSkfhgId7dGjTAHqkB84BZqjMSy5PlAYf1iejVA==",
-      "path": "yamldotnet/8.1.2",
-      "hashPath": "yamldotnet.8.1.2.nupkg.sha512"
+      "sha512": "sha512-9LNPviv9Vy/OajYsv6jiwsNdHevfPht4VQdom2LAqaJ4D36NbEuUdkfi/T6WCT9v+C6RDD6TAFUHHGRQ52E7UA==",
+      "path": "yamldotnet/9.1.1",
+      "hashPath": "yamldotnet.9.1.1.nupkg.sha512"
     },
     "Gaius.Core/1.0.0": {
       "type": "project",
