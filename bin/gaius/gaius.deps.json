@@ -6,9 +6,11 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "gaius/0.0.50": {
+      "gaius/0.0.51": {
         "dependencies": {
           "Gaius.Core": "1.0.0",
+          "Gaius.Processing": "1.0.0",
+          "Gaius.Worker": "1.0.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "5.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
@@ -74,11 +76,11 @@
           }
         }
       },
-      "Markdig/0.22.1": {
+      "Markdig/0.23.0": {
         "runtime": {
           "lib/netcoreapp3.1/Markdig.dll": {
-            "assemblyVersion": "0.22.1.0",
-            "fileVersion": "0.22.1.0"
+            "assemblyVersion": "0.23.0.0",
+            "fileVersion": "0.23.0.0"
           }
         }
       },
@@ -960,41 +962,50 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "YamlDotNet/9.1.1": {
+      "YamlDotNet/9.1.4": {
         "runtime": {
           "lib/netstandard2.1/YamlDotNet.dll": {
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.1.1.0"
+            "fileVersion": "9.1.4.0"
           }
         }
       },
       "Gaius.Core/1.0.0": {
         "dependencies": {
           "Colorful.Console": "1.2.15",
-          "Fluid.Core": "1.0.0-beta-9637",
-          "Gaius.Utilities": "1.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "5.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0",
-          "Newtonsoft.Json": "12.0.3",
-          "YamlDotNet": "9.1.1",
-          "Markdig": "0.22.1"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "Gaius.Core.dll": {}
         }
       },
-      "Gaius.Utilities/1.0.0": {
+      "Gaius.Processing/1.0.0": {
         "dependencies": {
-          "Colorful.Console": "1.2.15"
+          "Colorful.Console": "1.2.15",
+          "Gaius.Core": "1.0.0",
+          "Gaius.Worker": "1.0.0"
         },
         "runtime": {
-          "Gaius.Utilities.dll": {}
+          "Gaius.Processing.dll": {}
+        }
+      },
+      "Gaius.Worker/1.0.0": {
+        "dependencies": {
+          "Fluid.Core": "1.0.0-beta-9637",
+          "Gaius.Core": "1.0.0",
+          "YamlDotNet": "9.1.4",
+          "Markdig": "0.23.0"
+        },
+        "runtime": {
+          "Gaius.Worker.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "gaius/0.0.50": {
+    "gaius/0.0.51": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1020,12 +1031,12 @@
       "path": "irony.core/1.0.7",
       "hashPath": "irony.core.1.0.7.nupkg.sha512"
     },
-    "Markdig/0.22.1": {
+    "Markdig/0.23.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Rw4Z2yUaMQIVNBVnTrCzvulEzF0TdzNprIMZ0knOB0jnVryjOUHDeyVdwFHbWjHLf84sU6TvxI03U6+jC4UBVA==",
-      "path": "markdig/0.22.1",
-      "hashPath": "markdig.0.22.1.nupkg.sha512"
+      "sha512": "sha512-jPPcnHGSDSedPvwZ6jiMJpvK3iJGA2djU6TFmEr6XK2BiYK1ier2lTHVwDt41XLxDbfGu5Dn42hKDzwqs049PA==",
+      "path": "markdig/0.23.0",
+      "hashPath": "markdig.0.23.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
@@ -1671,19 +1682,24 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "YamlDotNet/9.1.1": {
+    "YamlDotNet/9.1.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9LNPviv9Vy/OajYsv6jiwsNdHevfPht4VQdom2LAqaJ4D36NbEuUdkfi/T6WCT9v+C6RDD6TAFUHHGRQ52E7UA==",
-      "path": "yamldotnet/9.1.1",
-      "hashPath": "yamldotnet.9.1.1.nupkg.sha512"
+      "sha512": "sha512-dVVZVhQxTI4xTNc9YorE+RruBFPPYKP44kMijE6Z5OQQE7zK+SEmh2sPm091CrTYVz1jjIuXKIBm1kFLrlsQJg==",
+      "path": "yamldotnet/9.1.4",
+      "hashPath": "yamldotnet.9.1.4.nupkg.sha512"
     },
     "Gaius.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Gaius.Utilities/1.0.0": {
+    "Gaius.Processing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Gaius.Worker/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
