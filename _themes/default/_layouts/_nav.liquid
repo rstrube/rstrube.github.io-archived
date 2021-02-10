@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
 
     <div class="container">
 
-        <a class="navbar-brand" href="{{site.url}}/">
-            <img src="{{site.url}}/images/logo.png" height="50" />
+        <a class="navbar-brand" href="{{ site.url }}/">
+            <img src="{{ site.url }}/images/logo.png" height="50" />
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item {% if page.id == 'index' %} active {% endif %}">
-                    <a class="nav-link" href="{{site.url}}/">Home
+                    <a class="nav-link" href="{{ site.url }}/">Home
                         {% if page.id == 'index' %}
                             <span class="sr-only">(current)</span>
                         {% endif %}
@@ -22,20 +22,14 @@
                 </li>
 
                 <!-- dropdown navigation item -->
-                <li class="nav-item dropdown {% if page.id contains 'samples.' %} active {% endif %}">
+                <li class="nav-item dropdown {% if page.id contains 'pages.' %} active {% endif %}">
 
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Samples</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dedicated Pages</a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                        <a class="dropdown-item {% if page.id == 'samples.sample-1' %} active {% endif %}" href="{{site.url}}/samples/sample-1.html">Sample 1
-                            {% if page.id == 'samples.sample-1' %}
-                                <span class="sr-only">(current)</span>
-                            {% endif %}
-                        </a>
-
-                        <a class="dropdown-item {% if page.id == 'samples.sample-2' %} active {% endif %}" href="{{site.url}}/samples/sample-2.html">Sample 2
-                            {% if page.id == 'samples.sample-2' %}
+                        <a class="dropdown-item {% if page.id == 'pages.dedicated-page-1' %} active {% endif %}" href="{{ site.url }}/pages/dedicated-page-1.html">Dedicated Page 1
+                            {% if page.id == 'pages.dedicated-page-1' %}
                                 <span class="sr-only">(current)</span>
                             {% endif %}
                         </a>
