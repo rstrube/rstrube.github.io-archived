@@ -23,7 +23,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "gaius/0.0.100": {
+      "gaius/0.0.101": {
         "dependencies": {
           "Gaius.Core": "1.0.0",
           "Gaius.Processing": "1.0.0",
@@ -2897,7 +2897,7 @@
     }
   },
   "libraries": {
-    "gaius/0.0.100": {
+    "gaius/0.0.101": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

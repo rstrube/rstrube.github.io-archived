@@ -21,7 +21,6 @@
         "GenerationUrlRootPrefix": "//rstrube.github.io",
         "AlwaysKeep": [
             ".git"
-        ],
-        "Worker": "Gaius.Worker.MarkdownLiquid.MarkdownLiquidWorker"
+        ]
     }
 }
