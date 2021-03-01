@@ -19,11 +19,13 @@
           <div class="row no-gutters align-items-center">
 
             <div class="col-auto pr-3">
-              <img src="{{ page.author_image }}" class="d-block rounded-circle" style="width:70px" />
+              <a href="{{ page.author_page }}">
+                <img src="{{ page.author_image }}" alt="picture of {{ page.author }} and link to author page" class="d-block rounded-circle" style="width:70px" />
+              </a>
             </div>
 
             <div class="col-auto pr-3">
-              <div class="text-muted">{{ page.author }}</div>
+              <div class="text-muted"><a href="{{ page.author_page }}">{{ page.author }}</a></div>
               <div class="text-muted"><i class="bi-calendar pr-2"></i>{{ page.date }}</div>
             </div>
 
