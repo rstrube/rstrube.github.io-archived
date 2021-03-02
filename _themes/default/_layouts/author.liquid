@@ -10,9 +10,11 @@
     <div class="container pt-5 pb-5">
 
       <div class="row no-gutters align-items-center mb-4">
-          <div class="col-auto mr-3">
-            <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="100" />
-          </div>
+          {% if page.author_image != nil %}
+            <div class="col-auto mr-3">
+              <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="100" />
+            </div>
+          {% endif %}
           <div class="col-auto mr-auto">
             <h1>{{ page.title }}</h1>
           </div>

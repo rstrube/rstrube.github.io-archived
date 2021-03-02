@@ -18,14 +18,28 @@
         <div class="col-auto">
           <div class="row no-gutters align-items-center">
 
-            <div class="col-auto mr-3">
-              <a href="{{ page.author_page }}">
-                <img src="{{ page.author_image }}" alt="Picture of {{ page.author }} and link to author page" class="d-block rounded-circle" width="65" />
-              </a>
-            </div>
+            {% if page.author_image != nil %}
+              <div class="col-auto mr-3">
+
+                {% if page.author_page != nil %}
+                  <a href="{{ page.author_page }}">
+                    <img src="{{ page.author_image }}" alt="Picture of {{ page.author }} and link to author page" class="d-block rounded-circle" width="65" />
+                  </a>
+                {% else %}
+                  <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="65" />
+                {% endif %}
+
+              </div>
+            {% endif %}
 
             <div class="col-auto mr-3">
-              <div class="text-muted"><a href="{{ page.author_page }}">{{ page.author }}</a></div>
+
+              {% if page.author_page != nil %}
+                <div class="text-muted"><a href="{{ page.author_page }}">{{ page.author }}</a></div>
+              {% else %}
+                <div class="text-muted">{{ page.author }}</div>
+              {% endif %}
+              
               <div class="text-muted"><i class="bi-calendar pr-2"></i>{{ page.date }}</div>
             </div>
 

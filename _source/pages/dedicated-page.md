@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Dedicated Page 1
-author: Robert Strube
-keywords: Gaius, Static Site Generator, Starter Site, Sample Dedicated Page
-description: Gaius Starter Site Sample Dedicated Page
+title: Example Dedicated Page
+author: Julius Caesar
+keywords: Gaius, Static Site Generator, Example Site, Example Dedicated Page
+description: Gaius Example Site Example Dedicated Page
 nav_order: 2.1
 ...
 
-This is a sample dedicated page.
+This is an example of a dedicated page.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac leo in lacus faucibus egestas in vitae orci. Suspendisse condimentum id eros id ultrices. Praesent lacinia nibh vitae tortor finibus interdum. Sed pharetra nec nisi et interdum. Sed vulputate, velit hendrerit porttitor condimentum, enim arcu aliquet nulla, vel finibus tellus ipsum vel lectus. Sed eu commodo risus. Phasellus commodo nisl ut risus volutpat, quis imperdiet ipsum porttitor. Aenean laoreet nisi sodales sem porta venenatis. Morbi pharetra vestibulum velit ullamcorper sodales. Sed eleifend risus magna, eget sollicitudin velit volutpat eget. Pellentesque a neque non nisi pellentesque elementum quis auctor turpis. Quisque vitae tortor nibh. Ut vulputate risus vel risus sagittis efficitur. Nunc id tempor erat, sit amet lacinia erat.
 
