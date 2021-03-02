@@ -20,7 +20,7 @@
         {% include '_partials/_post-teaser' %}
       {% endfor %}
 
-      {% if paginator.previous_page or paginator.next_page %}
+      {% if paginator.previous_page != nil or paginator.next_page != nil %}
         {% include '_partials/_paging' %}
       {% endif %}
 

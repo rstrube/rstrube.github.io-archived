@@ -1,6 +1,6 @@
 <nav aria-label="Page listing navigation">
     <ul class="pagination justify-content-center">
-        {% if paginator.previous_page %}
+        {% if paginator.previous_page != nil %}
             <li class="page-item">
                 <a class="page-link" href="{{ paginator.previous_page_path }}">Previous</a>
             </li>
@@ -9,7 +9,7 @@
                 <a class="page-link" href="#" tabindex="-1">Previous</a>
             </li>
         {% endif %}
-        {% if paginator.next_page %}
+        {% if paginator.next_page != nil %}
             <li class="page-item">
                 <a class="page-link" href="{{ paginator.next_page_path }}">Next</a>
             </li>
