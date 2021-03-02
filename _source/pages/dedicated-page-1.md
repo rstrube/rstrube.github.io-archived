@@ -4,6 +4,7 @@ title: Dedicated Page 1
 author: Robert Strube
 keywords: Gaius, Static Site Generator, Starter Site, Sample Dedicated Page
 description: Gaius Starter Site Sample Dedicated Page
+nav_order: 2.1
 ...
 
 This is a sample dedicated page.
