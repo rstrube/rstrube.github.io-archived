@@ -12,7 +12,7 @@
       <div class="row mb-3 align-items-center">
 
         <div class="col-auto mr-auto">
-          <h1>{{ page.title }}</h1>
+          <h3 class="mb-sm-0">{{ page.title }}</h3>
         </div>
 
         <div class="col-auto">
@@ -23,10 +23,10 @@
 
                 {% if page.author_page != nil %}
                   <a href="{{ page.author_page }}">
-                    <img src="{{ page.author_image }}" alt="Picture of {{ page.author }} and link to author page" class="d-block rounded-circle" width="65" />
+                    <img src="{{ page.author_image }}" alt="Picture of {{ page.author }} and link to author page" class="d-block rounded-circle" width="60" />
                   </a>
                 {% else %}
-                  <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="65" />
+                  <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="60" />
                 {% endif %}
 
               </div>
