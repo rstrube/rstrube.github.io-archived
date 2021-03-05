@@ -1,47 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-
     <div class="container">
 
         <a class="navbar-brand" href="{{ site.url }}/">
             <img src="{{ site.url }}/images/logo.png" height="50" />
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarContent">
 
             <ul class="navbar-nav ml-auto">
 
                 <!-- This loops through the site navigation -->
                 {% for nav in site.nav %}
-                    {% if nav.level == 0 %}
-                        {% include '_partials/_nav/_nav-item-link' %}
-                    {% endif %}
+                    {% include '_partials/_nav/_nav-item' %}
                 {% endfor %}
-
-                <!-- dropdown navigation item -->
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Additional Pages</a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-                        <!-- This loops through the site navigation again for sub pages-->
-                        {% for nav in site.nav %}
-                            {% if nav.level > 0 %}
-                                {% include '_partials/_nav/_nav-item-dropdown' %}
-                            {% endif %}
-                        {% endfor %}
-
-                    </div>
-                </li>
-                <!-- end dropdown navigation item -->
 
             </ul>
         </div>
-
     </div>
-
 </nav>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+  {% include '_partials/_head' %}
+
+  <body class="bg-light">
+    
+    {% include '_partials/_sidebar' %}
+
+    {% include '_partials/_nav' %}
+
+    <div class="container pt-5 pb-5">
+      <h3 class="mb-3">{{ page.title }}</h3>
+
+      {% if page.image != nil %}
+        <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
+      {% endif %}
+      
+      <!-- Content here -->
+      {{ page.content }}
+
+    </div>
+
+    {% include '_partials/_footer' %}
+
+  </body>
+</html>
