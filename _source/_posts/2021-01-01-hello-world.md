@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hello World! Hello Gaius!
-image:
-teaser_image: /images/posts/teaser/gaius.png
+image: /images/posts/hello-world.png
+teaser_image: /images/posts/teaser/hello-world.png
 author: Firstname Lastname
 author_page: /pages/authors/firstname-lastname/
 author_image: /images/author.png
