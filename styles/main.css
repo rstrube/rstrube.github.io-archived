@@ -27,6 +27,13 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .gaius-sidebar {
+        -ms-flex: 0 1 320px;
+        flex: 0 1 320px;
+    }
+}
+
 .gaius-sidebar-links {
     width: 100%;
     max-height: calc(100vh - 10rem);
