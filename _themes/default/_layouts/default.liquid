@@ -5,9 +5,9 @@
 
   <body class="bg-white">
 
-    {% include '_partials/_nav' %}
+    {% include '_partials/_nav_header' %}
     
-    <div class="container py-5">
+    <main class="container py-5" role="main">
 
       <h3 class="mb-3">{{ page.title }}</h3>
 
@@ -18,7 +18,7 @@
       <!-- Content here -->
       {{ page.content }}
 
-    </div>
+    </main>
     
     {% include '_partials/_footer' %}
 

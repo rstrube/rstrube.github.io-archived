@@ -1,0 +1,27 @@
+<header class="navbar navbar-expand-md navbar-light bg-light border-bottom gaius-navbar">
+
+    <button class="btn btn-dark px-3 d-md-none" type="button" data-toggle="collapse" data-target="#gaius-sidebar-nav" aria-controls="gaius-sidebar-nav" aria-expanded="true" aria-label="Toggle sidebar">
+        <span class="bi-layout-text-sidebar"></span>
+    </button>
+
+    <a class="navbar-brand m-0" href="{{ site.url }}/">
+        <img src="{{ site.url }}/images/logo.png" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gaius-navbar-content" aria-controls="gaius-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="gaius-navbar-content" class="collapse navbar-collapse">
+
+        <ul class="navbar-nav ml-auto">
+
+            <!-- This loops through the site navigation -->
+            {% for nav in site.nav %}
+                {% include '_partials/_nav-header/_nav-header-item' %}
+            {% endfor %}
+
+        </ul>
+    </div>
+
+</header>

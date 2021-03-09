@@ -5,10 +5,11 @@
 
   <body class="bg-white">
 
-    {% include '_partials/_nav' %}
+    {% include '_partials/_nav_header' %}
     
-    <div class="container py-5">
+    <main class="container py-5" role="main">
 
+      <!-- author name row -->
       <div class="row no-gutters align-items-center mb-3">
 
           {% if page.author_image != nil %}
@@ -21,11 +22,11 @@
             <h3 class="mb-0">{{ page.title }}</h3>
           </div>
       </div>
-      
+
       <!-- Content here -->
       {{ page.content }}
 
-    </div>
+    </main>
     
     {% include '_partials/_footer' %}
 

@@ -1,33 +1,13 @@
 <!-- Sidebar -->
-<div class="row">
-    <div class="col-auto bg-light border-right py-3" id="sidebar">
+<div class="col-md-4 col-lg-3 col-xl-2 bg-light border-right gaius-sidebar">
+    <div id="gaius-sidebar-nav" class="d-md-block row collapse show">
+        <nav class="gaius-sidebar-links">
+                
+            <!-- This loops through the site navigation -->
+            {% for nav in site.nav %}
+                {% include '_partials/_sidebar/_sidebar-item' %}
+            {% endfor %}
 
-        <!-- Fixed position toggler button -->
-        <button class="btn btn-dark" id="sidebar-collapsed-toggler" type="button">
-            <i class="bi-box-arrow-right"></i>
-        </button>
-
-        <div class="row pb-3">
-            <div class="col">
-                <button class="d-flex btn btn-dark mx-auto" id="sidebar-expanded-toggler" type="button">
-                    <span><i class="bi-box-arrow-left pr-2"></i>Close Navigation</span>
-                </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col px-4">
-                <nav>
-                    <ul class="nav flex-column">
-                        
-                        <!-- This loops through the site navigation -->
-                        {% for nav in site.nav %}
-                            {% include '_partials/_sidebar/_sidebar-item' %}
-                        {% endfor %}
-
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        </nav>
     </div>
 </div>

@@ -1,18 +1,7 @@
-<li class="nav-item">
-    <a class="nav-link py-1 px-2" href="{{ nav2.url }}">{{ nav2.title }}
+<div>
+    <a class="d-block py-1" href="{{ nav2.url }}">{{ nav2.title }}
         {% if page.id == nav2.id %}
             <span class="sr-only">(current)</span>
         {% endif %}
     </a>
-
-    {% if nav2.children != nil %}
-
-        <ul class="sidebar-sublist pl-4">
-            <!-- This loops through the site navigation level 3-->
-            {% for nav3 in nav2.children %}
-                {% include '_partials/_sidebar/_sidebar-item-3' %}
-            {% endfor %}
-        </ul>
-
-    {% endif %}
-</li>
+</div>

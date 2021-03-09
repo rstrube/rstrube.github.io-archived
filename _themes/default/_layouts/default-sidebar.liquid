@@ -4,24 +4,37 @@
   {% include '_partials/_head' %}
 
   <body class="bg-white">
-    
-    {% include '_partials/_sidebar' %}
 
-    {% include '_partials/_nav' %}
+      {% include '_partials/_nav_header' %}
 
-    <div class="container py-5">
-      <h3 class="mb-3">{{ page.title }}</h3>
+      <div class="container-fluid">
+        <div class="row flex-xl-nowrap">
 
-      {% if page.image != nil %}
-        <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
-      {% endif %}
+          {% include '_partials/_sidebar' %}
+
+          <main class="col-md-8 col-lg-9 col-xl-10" role="main">
+            <div class="container py-5">
+              <div class="row">
+                <div class="col">
+
+                  <h3 class="mb-3">{{ page.title }}</h3>
+
+                  {% if page.image != nil %}
+                    <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
+                  {% endif %}
+
+                  <!-- Content here -->
+                  {{ page.content }}
+                  
+                </div>
+              </div>
+            </div>
+          </main>
+          
+        </div>
+      </div>
+
+      {% include '_partials/_footer' %}
       
-      <!-- Content here -->
-      {{ page.content }}
-
-    </div>
-
-    {% include '_partials/_footer' %}
-
   </body>
 </html>
