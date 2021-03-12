@@ -1,14 +1,14 @@
 <div>
-    <a class="d-block py-1" href="{{ nav.url }}">{{ nav.title }}
-        {% if page.id == nav.id %}
+    <a class="d-block py-1" href="{{ sb.url }}">{{ sb.title }}
+        {% if page.id == sb.id %}
             <span class="sr-only">(current)</span>
         {% endif %}
     </a>
 <div>
 
-{% if nav.children != nil %}
-    <!-- This loops through the site navigation level 2-->
-    {% for nav2 in nav.children %}
+{% if sb.children != nil %}
+    <!-- This loops through the site sidbar level 2-->
+    {% for sb2 in sb.children %}
         {% include '_partials/_sidebar/_sidebar-item-2' %}
     {% endfor %}
 {% endif %}

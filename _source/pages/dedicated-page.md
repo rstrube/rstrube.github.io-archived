@@ -4,7 +4,6 @@ title: Example Dedicated Page
 author: Julius Caesar
 keywords: Gaius, Static Site Generator, Example Site, Example Dedicated Page
 description: Gaius Example Site Example Dedicated Page
-nav_order: 2.1
 ...
 
 This is an example of a dedicated page.

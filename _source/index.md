@@ -6,7 +6,6 @@ keywords: Gaius, Static Site Generator, Empty Starter Site
 description: Gaius Empty Starter Site
 nav_order: 1
 nav_title: Home
-nav_in_header: true
 ...
 
 This is an *nearly* empty starter site generated using the Gaius static site generation platform.  You can use this starter site as the basis for creating a new site.
