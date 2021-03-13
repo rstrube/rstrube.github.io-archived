@@ -23,40 +23,47 @@
 </head>
   <body class="bg-white">
 
-<header class="navbar navbar-expand-md navbar-light bg-light border-bottom gaius-navbar">
+<nav class="navbar navbar-expand-md navbar-light sticky-top flex-nowrap bg-light border-bottom gaius-navbar">
 
-    <button id="sidebar-toggler" class="btn btn-dark px-3 d-md-none" type="button" data-toggle="collapse" data-target="#gaius-sidebar-nav" aria-controls="gaius-sidebar-nav" aria-expanded="true" aria-label="Toggle sidebar">
+    <button class="btn btn-dark px-3 d-md-none" type="button" data-toggle="collapse" data-target="#gaius-sidebar" aria-controls="gaius-sidebar" aria-expanded="true" aria-label="Toggle sidebar">
         <span class="bi-layout-text-sidebar"></span>
     </button>
 
     <a class="navbar-brand m-0" href="//rstrube.github.io/">
-        <img src="//rstrube.github.io/images/logo.png" />
+        <img src="//rstrube.github.io/images/logo.png" height="50" />
     </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gaius-navbar-content" aria-controls="gaius-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
     <div id="gaius-navbar-content" class="collapse navbar-collapse">
 
-        <ul class="navbar-nav ml-auto">
+        <div class="navbar-nav ml-auto">
 
             <!-- This loops through the site navigation -->
-<li class="nav-item active">
-    <a class="nav-link" href="//rstrube.github.io/">Home
-    </a>
-</li>
-        </ul>
+<a class="nav-link " href="//rstrube.github.io/">Home
+</a>
+        </div>
     </div>
 
-</header>    
-    <main class="container py-5" role="main">
+</nav><!-- Sidebar -->
+<aside id="gaius-sidebar" class="bg-light border-right collapse width gaius-sidebar d-md-none">
 
-      <h3 class="mb-3">Example Dedicated Page</h3>
+    <nav class="nav flex-column border-bottom d-md-none py-2">
+        <!-- This loops through the site navigation -->
+<a class="nav-link " href="//rstrube.github.io/">Home
+</a>    </nav>
 
-      
-      <!-- Content here -->
-      <p>This is an example of a dedicated page.</p>
+    <div class="nav flex-column py-2">
+        <!-- This loops through the site sidebar -->
+    </div>
+
+</aside>
+      <div class="container py-4 py-md-5">
+        <main class="gaius-main " role="main">
+
+          <h3 class="mb-3">Example Dedicated Page</h3>
+
+
+          <!-- Content here -->
+          <p>This is an example of a dedicated page.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac leo in lacus faucibus egestas in vitae orci. Suspendisse condimentum id eros id ultrices. Praesent lacinia nibh vitae tortor finibus interdum. Sed pharetra nec nisi et interdum. Sed vulputate, velit hendrerit porttitor condimentum, enim arcu aliquet nulla, vel finibus tellus ipsum vel lectus. Sed eu commodo risus. Phasellus commodo nisl ut risus volutpat, quis imperdiet ipsum porttitor. Aenean laoreet nisi sodales sem porta venenatis. Morbi pharetra vestibulum velit ullamcorper sodales. Sed eleifend risus magna, eget sollicitudin velit volutpat eget. Pellentesque a neque non nisi pellentesque elementum quis auctor turpis. Quisque vitae tortor nibh. Ut vulputate risus vel risus sagittis efficitur. Nunc id tempor erat, sit amet lacinia erat.</p>
 <p>Nullam consectetur erat mollis, blandit tortor quis, porta erat. Nulla vel eleifend felis. Morbi placerat erat sed erat pellentesque consectetur. Mauris ac iaculis odio. Sed quis neque id odio pretium hendrerit sit amet vitae purus. Curabitur mattis nisi ultrices turpis convallis, ut ullamcorper ex ultricies. Nunc varius malesuada tristique. Sed ac hendrerit magna. Nunc fringilla dictum dui, non fermentum elit convallis in. Sed vitae est ac diam imperdiet pellentesque.</p>
 <p>Phasellus ut sem eget nisl dictum ornare sit amet vel lacus. Cras luctus ipsum non mi cursus, consectetur tempus elit consectetur. Nulla in venenatis odio. Praesent ac facilisis est, at dignissim risus. Etiam commodo, tellus nec viverra laoreet, ex elit elementum dui, eu convallis sapien erat non diam. Nunc ac pretium nisi, ullamcorper tempor ante. Etiam sed rutrum sapien. Aenean posuere tincidunt leo id molestie. Quisque lacus felis, tincidunt sit amet magna iaculis, interdum vehicula turpis. Vestibulum eu dui ornare, vestibulum leo quis, vehicula tortor. Sed ac quam magna.</p>
@@ -64,12 +71,13 @@
 <p>Suspendisse pellentesque augue ipsum, vel accumsan erat sodales mattis. Duis et arcu sit amet turpis commodo lacinia ac aliquet enim. Fusce mollis accumsan mattis. Donec congue maximus libero quis blandit. Nam vitae risus sed justo dictum tincidunt quis vel leo. Nunc rutrum dapibus lacus, vitae viverra enim dignissim a. Donec varius odio in faucibus vulputate. Nullam imperdiet urna nec erat porta dictum. Ut dui tortor, laoreet ut laoreet in, varius eu nulla. Sed quis purus nulla. Nam nec nunc sollicitudin, semper sapien nec, tempor felis. Pellentesque a congue erat.</p>
 
 
-    </main>
-    
-<footer class="bg-light border-top border-bottom py-4 pl-4">
+        </main>
+      </div>
+
+<footer class="position-relative d-flex flex-nowrap align-items-center px-3 py-3 bg-light border-top border-bottom gaius-footer">
 
     <p class="text-muted small m-0">
-      Generated by <a href="https://github.com/gaius-dev/gaius-engine/releases">Gaius v0.150.0</a> on 2021-03-12 02:10:44Z.<br/>
+      Generated by <a href="https://github.com/gaius-dev/gaius-engine/releases">Gaius v0.160.0</a> on 2021-03-13 22:06:57Z.<br/>
       Please visit the <a href="https://gaius-dev.github.io/gaius-docs/">Gaius documentation site</a> for more information.<br/>
       Gaius <a href="https://github.com/gaius-dev/gaius-themes">default theme</a> is built on © <a href="https://getbootstrap.com/">Bootstrap</a>.
     </p>
@@ -87,6 +95,6 @@
 <!-- local JS -->
 <script src="//rstrube.github.io/scripts/main.js"></script>
 <!-- initiate highlight.js -->
-<script>hljs.highlightAll();</script>
+<script>hljs.highlightAll();</script>      
   </body>
 </html>

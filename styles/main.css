@@ -1,54 +1,42 @@
-body:not(.has-sidebar) #sidebar-toggler {
-    display: none !important;
-}
-
 .gaius-navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    min-height: 4.825rem;
-    z-index: 1000;
-    padding: .5rem 1.5rem;
+    height: 4rem;
 }
 
 .gaius-sidebar {
-    -ms-flex-order: 0;
-    order: 0;
-}
-
-@media (min-width: 768px) {
-    .gaius-sidebar {
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    @supports ((position: -webkit-sticky) or (position: sticky)) {
-        .gaius-sidebar {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 4.825rem;
-            z-index: 1001;
-            height: calc(100vh - 4.825rem)
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .gaius-sidebar {
-        -ms-flex: 0 1 320px;
-        flex: 0 1 320px;
-    }
-}
-
-.gaius-sidebar-links {
-    width: 100%;
-    max-height: calc(100vh - 10rem);
-    padding: .75rem 1.5rem .75rem 1.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 16.5rem;
+    top: 4rem;
+    left: 0;
+    bottom: 0;
+    z-index: 1010;
     overflow-y: auto;
 }
 
 @media (min-width: 768px) {
-    .gaius-sidebar-links {
-        padding: 3rem 1.5rem 3rem 1.5rem;
-        border-bottom: 0;
+    .gaius-navbar {
+        height: 5rem;
     }
+    .gaius-sidebar {
+        top: 5rem;
+    }
+    .gaius-main.has-sidebar {
+        padding-left: 16.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .gaius-footer {
+        z-index: 1015;
+    }
+}
+
+.collapse.width {
+    transition: width 0.35s;
+}
+
+.collapsing.width {
+    height: auto !important;
+    width: 0;
+    transition: width 0.35s;
+    overflow: hidden;
 }
