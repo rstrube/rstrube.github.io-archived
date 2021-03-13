@@ -5,28 +5,31 @@
 
   <body class="bg-white">
 
-    {% include '_partials/_nav_header' %}
-    
-    <div class="container py-5">
+      {% include '_partials/_nav_header' %}
+      {% include '_partials/_sidebar' %}
 
-      <section class="mb-5">
-        <h3 class="mb-3">{{ paginator.associated_tag.name }} Posts</h3>
-        <!-- Content here -->
-        {{ page.content }}
-      </section>
+      <div class="container py-4 py-md-5">
+        <main class="gaius-main {% if site.sidebar.size > 0 %}has-sidebar{% endif %}" role="main">
 
-      <!-- This loops through the paginated posts -->
-      {% for post in paginator.posts %}
-        {% include '_partials/_post-teaser' %}
-      {% endfor %}
+          <section class="mb-5">
+            <h3 class="mb-3">{{ paginator.associated_tag.name }} Posts</h3>
+            <!-- Content here -->
+            {{ page.content }}
+          </section>
 
-      {% if paginator.previous_page != nil or paginator.next_page != nil %}
-        {% include '_partials/_paging' %}
-      {% endif %}
+          <!-- This loops through the paginated posts -->
+          {% for post in paginator.posts %}
+            {% include '_partials/_post-teaser' %}
+          {% endfor %}
 
-    </div>
+          {% if paginator.previous_page != nil or paginator.next_page != nil %}
+            {% include '_partials/_paging' %}
+          {% endif %}
 
-    {% include '_partials/_footer' %}
+        </main>
+      </div>
 
+      {% include '_partials/_footer' %}
+      
   </body>
 </html>

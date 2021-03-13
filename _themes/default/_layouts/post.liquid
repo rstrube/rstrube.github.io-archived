@@ -5,57 +5,60 @@
 
   <body class="bg-white">
 
-    {% include '_partials/_nav_header' %}
-    
-    <main class="container py-5" role="main">
+      {% include '_partials/_nav_header' %}
+      {% include '_partials/_sidebar' %}
 
-      <!-- title row -->
-      <div class="row mb-3 align-items-center">
-        <div class="col-auto mr-auto">
-          <h3 class="mb-sm-0">{{ page.title }}</h3>
-        </div>
-        <div class="col-auto">
-          <div class="row no-gutters align-items-center">
+      <div class="container py-4 py-md-5">
+        <main class="gaius-main {% if site.sidebar.size > 0 %}has-sidebar{% endif %}" role="main">
 
-            {% if page.author_image != nil %}
-              <div class="col-auto mr-3">
+          <!-- title row -->
+          <div class="row mb-3 align-items-center">
+            <div class="col-auto mr-auto">
+              <h3 class="mb-sm-0">{{ page.title }}</h3>
+            </div>
+            <div class="col-auto">
+              <div class="row no-gutters align-items-center">
 
-                {% if page.author_page != nil %}
-                  <a href="{{ page.author_page }}">
-                    <img src="{{ page.author_image }}" alt="Picture of {{ page.author }} and link to author page" class="d-block rounded-circle" width="60" />
-                  </a>
-                {% else %}
-                  <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="60" />
+                {% if page.author_image != nil %}
+                  <div class="col-auto mr-3">
+
+                    {% if page.author_page != nil %}
+                      <a href="{{ page.author_page }}">
+                        <img src="{{ page.author_image }}" alt="Picture of {{ page.author }} and link to author page" class="d-block rounded-circle" width="60" />
+                      </a>
+                    {% else %}
+                      <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="60" />
+                    {% endif %}
+
+                  </div>
                 {% endif %}
 
+                <div class="col-auto mr-3">
+
+                  {% if page.author_page != nil %}
+                    <div class="text-muted"><a href="{{ page.author_page }}">{{ page.author }}</a></div>
+                  {% else %}
+                    <div class="text-muted">{{ page.author }}</div>
+                  {% endif %}
+                  
+                  <div class="text-muted"><i class="bi-calendar pr-2"></i>{{ page.date }}</div>
+                </div>
+
               </div>
-            {% endif %}
-
-            <div class="col-auto mr-3">
-
-              {% if page.author_page != nil %}
-                <div class="text-muted"><a href="{{ page.author_page }}">{{ page.author }}</a></div>
-              {% else %}
-                <div class="text-muted">{{ page.author }}</div>
-              {% endif %}
-              
-              <div class="text-muted"><i class="bi-calendar pr-2"></i>{{ page.date }}</div>
             </div>
-
           </div>
-        </div>
+
+          {% if page.image != nil %}
+            <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
+          {% endif %}
+
+          <!-- Content here -->
+          {{ page.content }}
+
+        </main>
       </div>
 
-      {% if page.image != nil %}
-        <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
-      {% endif %}
-
-      <!-- Content here -->
-      {{ page.content }}
-
-    </main>
-    
-    {% include '_partials/_footer' %}
-
+      {% include '_partials/_footer' %}
+      
   </body>
 </html>

@@ -1,13 +1,18 @@
 <!-- Sidebar -->
-<div class="col-md-4 col-lg-3 col-xl-2 bg-light border-right gaius-sidebar">
-    <div id="gaius-sidebar-nav" class="d-md-block row collapse show">
-        <nav class="gaius-sidebar-links">
-            
-            <!-- This loops through the site navigation -->
-            {% for sb in site.sidebar %}
-                {% include '_partials/_sidebar/_sidebar-item' %}
-            {% endfor %}
+<aside id="gaius-sidebar" class="bg-light border-right collapse width gaius-sidebar {% if site.sidebar.size > 0 %}d-md-block{% endif %} {% if site.sidebar.size == 0 %}d-md-none{% endif %}">
 
-        </nav>
+    <nav class="nav flex-column border-bottom d-md-none py-2">
+        <!-- This loops through the site navigation -->
+        {% for nav in site.nav %}
+            {% include '_partials/_nav/_nav-item' %}
+        {% endfor %}
+    </nav>
+
+    <div class="nav flex-column py-2">
+        <!-- This loops through the site sidebar -->
+        {% for sb in site.sidebar %}
+            {% include '_partials/_sidebar/_sidebar-item' %}
+        {% endfor %}
     </div>
-</div>
+
+</aside>

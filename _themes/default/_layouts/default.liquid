@@ -5,22 +5,25 @@
 
   <body class="bg-white">
 
-    {% include '_partials/_nav_header' %}
-    
-    <main class="container py-5" role="main">
+      {% include '_partials/_nav_header' %}
+      {% include '_partials/_sidebar' %}
 
-      <h3 class="mb-3">{{ page.title }}</h3>
+      <div class="container py-4 py-md-5">
+        <main class="gaius-main {% if site.sidebar.size > 0 %}has-sidebar{% endif %}" role="main">
 
-      {% if page.image != nil %}
-        <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
-      {% endif %}
+          <h3 class="mb-3">{{ page.title }}</h3>
+
+          {% if page.image != nil %}
+            <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
+          {% endif %}
+
+          <!-- Content here -->
+          {{ page.content }}
+
+        </main>
+      </div>
+
+      {% include '_partials/_footer' %}
       
-      <!-- Content here -->
-      {{ page.content }}
-
-    </main>
-    
-    {% include '_partials/_footer' %}
-
   </body>
 </html>
