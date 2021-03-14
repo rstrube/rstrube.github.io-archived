@@ -73,10 +73,16 @@ a:hover {
     .gaius-main.has-sidebar {
         padding-left: 16.5rem;
     }
-}
-
-@media (min-width: 768px) {
     .gaius-footer {
         z-index: 1015;
+    }
+}
+
+@media (min-width: 992px) {
+    .gaius-sidebar {
+        width: 20rem;
+    }
+    .gaius-main.has-sidebar {
+        padding-left: 20rem;
     }
 }
