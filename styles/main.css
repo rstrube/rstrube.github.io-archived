@@ -10,6 +10,12 @@
     bottom: 0;
     z-index: 1010;
     overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform .25s;
+}
+
+.gaius-sidebar.open {
+    transform: translateX(0);
 }
 
 @media (min-width: 768px) {
@@ -18,6 +24,7 @@
     }
     .gaius-sidebar {
         top: 5rem;
+        transform: translateX(0);
     }
     .gaius-main.has-sidebar {
         padding-left: 16.5rem;
@@ -28,15 +35,4 @@
     .gaius-footer {
         z-index: 1015;
     }
-}
-
-.collapse.width {
-    transition: width 0.35s;
-}
-
-.collapsing.width {
-    height: auto !important;
-    width: 0;
-    transition: width 0.35s;
-    overflow: hidden;
 }
