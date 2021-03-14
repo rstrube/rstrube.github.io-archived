@@ -12,15 +12,15 @@
         <main class="gaius-main {% if site.sidebar.size > 0 %}has-sidebar{% endif %}" role="main">
 
           <!-- author name row -->
-          <div class="row no-gutters align-items-center mb-3">
+          <div class="row no-gutters align-items-center mb-2">
 
               {% if page.author_image != nil %}
-                <div class="col-auto mr-3 mb-1 mb-sm-0">
+                <div class="col-auto mr-2">
                   <img src="{{ page.author_image }}" alt="Picture of {{ page.author }}" class="d-block rounded-circle" width="100" />
                 </div>
               {% endif %}
 
-              <div class="col-auto mr-auto">
+              <div class="col-auto">
                 <h3 class="mb-0">{{ page.title }}</h3>
               </div>
           </div>

@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Hello World! Hello Gaius!
-image: /images/posts/hello-world.png
-teaser_image: /images/posts/teaser/hello-world.png
+image: /images/posts/hello-world.webp
 author: Firstname Lastname
 author_page: /pages/authors/firstname-lastname/
-author_image: /images/author.png
+author_image: /images/author.webp
 keywords: Gaius, Static Site Generator, Starter Site, Example Post
 description: Gaius Starter Site Example Post
 tags: ["Hello World!", "Hello Gaius!"]

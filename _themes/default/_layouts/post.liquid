@@ -12,15 +12,15 @@
         <main class="gaius-main {% if site.sidebar.size > 0 %}has-sidebar{% endif %}" role="main">
 
           <!-- title row -->
-          <div class="row mb-3 align-items-center">
+          <div class="row mb-2 align-items-center">
             <div class="col-auto mr-auto">
-              <h3 class="mb-sm-0">{{ page.title }}</h3>
+              <h3 class="mb-0">{{ page.title }}</h3>
             </div>
             <div class="col-auto">
               <div class="row no-gutters align-items-center">
 
                 {% if page.author_image != nil %}
-                  <div class="col-auto mr-3">
+                  <div class="col-auto mr-2">
 
                     {% if page.author_page != nil %}
                       <a href="{{ page.author_page }}">
@@ -49,7 +49,8 @@
           </div>
 
           {% if page.image != nil %}
-            <img src="{{ page.image }}" class="d-block rounded img-thumbnail float-left mb-1 mr-3" width="200" />
+            <img src="{{ page.image }}" class="d-none d-md-block rounded img-thumbnail float-left mb-1 mr-3" style="max-width:50%"/>
+            <img src="{{ page.image }}" class="d-md-none rounded img-thumbnail img-fluid mb-3" />
           {% endif %}
 
           <!-- Content here -->

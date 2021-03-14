@@ -1,11 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('#sidebar-expanded-toggler').on('click', function () {
-        $('#sidebar').toggleClass('toggled');
+    $('#gaius-sidebar-toggler').on('click', function() {
+        $('#gaius-sidebar').toggleClass('open');
     });
-
-    $('#sidebar-collapsed-toggler').on('click', function () {
-        $('#sidebar').toggleClass('toggled');
-    });
-
 });
