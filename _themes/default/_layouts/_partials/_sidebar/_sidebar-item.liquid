@@ -1,10 +1,29 @@
-<a class="nav-link" href="{{ sb.url }}">{{ sb.title }}
-    {% if page.id == sb.id %}
-        <span class="sr-only">(current)</span>
-    {% endif %}
-</a>
+<!-- logic to check if sibebar link is active -->
+{% if page.id == sb.id %}
+    {% assign var-is-active = true %}
+{% else %}
+    {% for sb2-test in sb.children %}
+        {% if page.id == sb2-test.id %}
+            {% assign var-is-active = true %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
 
-<!-- This loops through the site sidbar level 2-->
-{% for sb2 in sb.children %}
-    {% include '_partials/_sidebar/_sidebar-item-2' %}
-{% endfor %}
+<li class="nav-item">
+
+    <a class="nav-link {% if var-is-active %}active{% endif %}" href="{{ sb.url }}">{{ sb.title }}
+        {% if page.id == sb.id %}
+            <span class="sr-only">(current)</span>
+        {% endif %}
+    </a>
+
+    {% if sb.children.size > 0 %}
+        <ul class="nav pl-4 mb-3 {% unless var-is-active %}d-none{% endunless %}">
+            <!-- This loops through the site sidbar level 2-->
+            {% for sb2 in sb.children %}
+                {% include '_partials/_sidebar/_sidebar-item-2' %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+</li>

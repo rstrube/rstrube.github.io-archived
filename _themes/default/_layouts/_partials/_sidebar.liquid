@@ -1,18 +1,20 @@
 <!-- Sidebar -->
-<aside id="gaius-sidebar" class="bg-light border-right gaius-sidebar {% if site.sidebar.size > 0 %}d-md-block{% endif %} {% if site.sidebar.size == 0 %}d-md-none{% endif %}">
+<aside id="gaius-sidebar" class="bg-light border-right gaius-sidebar {% if site.sidebar.size > 0 %}d-md-block{% else %}d-md-none{% endif %}">
 
-    <nav class="nav flex-column border-bottom d-md-none py-2">
+    <nav class="nav flex-column border-bottom py-2">
         <!-- This loops through the site navigation -->
         {% for nav in site.nav %}
             {% include '_partials/_nav/_nav-item' %}
         {% endfor %}
     </nav>
 
-    <div class="nav flex-column py-2">
-        <!-- This loops through the site sidebar -->
-        {% for sb in site.sidebar %}
-            {% include '_partials/_sidebar/_sidebar-item' %}
-        {% endfor %}
-    </div>
+    {% if site.sidebar.size > 0 %}
+        <ul class="nav flex-column py-2">
+            <!-- This loops through the site sidebar -->
+            {% for sb in site.sidebar %}
+                {% include '_partials/_sidebar/_sidebar-item' %}
+            {% endfor %}
+        </ul>
+    {% endif %}
 
 </aside>

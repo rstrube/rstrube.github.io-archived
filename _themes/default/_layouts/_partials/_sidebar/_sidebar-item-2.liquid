@@ -1,5 +1,7 @@
-<a class="nav-link" href="{{ sb2.url }}">{{ sb2.title }}
-    {% if page.id == sb2.id %}
-        <span class="sr-only">(current)</span>
-    {% endif %}
-</a>
+<li class="nav-item">
+    <a class="nav-link small py-1 gaius-child-nav-link {% if page.id == sb2.id %}active{% endif %}" href="{{ sb2.url }}">{{ sb2.title }}
+        {% if page.id == sb2.id %}
+            <span class="sr-only">(current)</span>
+        {% endif %}
+    </a>
+</li>
