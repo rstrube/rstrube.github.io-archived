@@ -3,13 +3,18 @@ a {
     font-weight: 500;
 }
 
-.gaius-main a {
-    font-weight: bold;
-}
-
 a:hover {
     color: #6610f2 !important;
     font-weight: bold !important;
+}
+
+code:not(.hljs) {
+    color: #6610f2 !important;
+    font-weight: 500 !important;
+}
+
+.gaius-main a {
+    font-weight: bold;
 }
 
 .gaius-navbar {
