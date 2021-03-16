@@ -18,7 +18,7 @@
     </a>
 
     {% if sb.children.size > 0 %}
-        <ul class="nav pl-4 mb-3 {% unless var-is-active %}d-none{% endunless %}">
+        <ul class="nav pl-4 mb-3">
             <!-- This loops through the site sidbar level 2-->
             {% for sb2 in sb.children %}
                 {% include '_partials/_sidebar/_sidebar-item-2' %}
