@@ -18,7 +18,7 @@
         "TagUrlPrefix": "tag",
         "ThemeName": "default",
         "Pagination": 5,
-        "GenerationUrlRootPrefix": "//rstrube.github.io",
+        "GenerationUrlRootPrefix": "",
         "AlwaysKeep": [
             ".git"
         ]
